@@ -1,0 +1,11 @@
+E:\GitHub\MapServer\Map\bin\Debug\netcoreapp2.0\Map.deps.json
+E:\GitHub\MapServer\Map\bin\Debug\netcoreapp2.0\Map.runtimeconfig.json
+E:\GitHub\MapServer\Map\bin\Debug\netcoreapp2.0\Map.runtimeconfig.dev.json
+E:\GitHub\MapServer\Map\bin\Debug\netcoreapp2.0\Map.dll
+E:\GitHub\MapServer\Map\bin\Debug\netcoreapp2.0\Map.pdb
+E:\GitHub\MapServer\Map\obj\Debug\netcoreapp2.0\Map.csprojResolveAssemblyReference.cache
+E:\GitHub\MapServer\Map\obj\Debug\netcoreapp2.0\Map.csproj.CoreCompileInputs.cache
+E:\GitHub\MapServer\Map\obj\Debug\netcoreapp2.0\Map.AssemblyInfoInputs.cache
+E:\GitHub\MapServer\Map\obj\Debug\netcoreapp2.0\Map.AssemblyInfo.cs
+E:\GitHub\MapServer\Map\obj\Debug\netcoreapp2.0\Map.dll
+E:\GitHub\MapServer\Map\obj\Debug\netcoreapp2.0\Map.pdb
