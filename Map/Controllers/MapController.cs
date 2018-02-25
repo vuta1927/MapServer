@@ -9,6 +9,7 @@ namespace Map.Controllers
     [Route("api/[controller]")]
     public class MapController : Controller
     {
+        private MapType mapType = new MapType();
         // GET api/values
         [HttpGet]
         public IActionResult Get()
@@ -20,32 +21,28 @@ namespace Map.Controllers
                 new road(3, 21.017032, 105.779578, 21.018295, 105.779560, 0.5, "#41ff28", "Normal"),
                 new road(4, 21.016594, 105.783340, 21.018446, 105.783493, 0.5, "#3859ff", "Empty")
             };
-            return Ok(roads);
-        }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
+            return Ok(new Map(1,mapType.Google, roads, true));
         }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
+    }
+    public class MapType
+    {
+        public int Google = 100;
+        public int Microsoft = 200;
+        public int Fabric = 300;
+    }
+    public class Map
+    {
+        public int id { get; set; }
+        public int type { get; set; }
+        public bool editMode { get; set; }
+        public List<road> roads { get; set; }
+        public Map(int id, int type, List<road> roads, bool editMode)
         {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            this.id = id;
+            this.type = type;
+            this.roads = roads;
+            this.editMode = editMode;
         }
     }
 }
