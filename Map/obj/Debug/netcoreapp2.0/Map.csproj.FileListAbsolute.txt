@@ -20,3 +20,14 @@ E:\GitHub\MapServer\MapServer\Map\obj\Debug\netcoreapp2.0\Map.AssemblyInfoInputs
 E:\GitHub\MapServer\MapServer\Map\obj\Debug\netcoreapp2.0\Map.AssemblyInfo.cs
 E:\GitHub\MapServer\MapServer\Map\obj\Debug\netcoreapp2.0\Map.dll
 E:\GitHub\MapServer\MapServer\Map\obj\Debug\netcoreapp2.0\Map.pdb
+D:\Projects\MapServer\Map\bin\Debug\netcoreapp2.0\Map.deps.json
+D:\Projects\MapServer\Map\bin\Debug\netcoreapp2.0\Map.runtimeconfig.json
+D:\Projects\MapServer\Map\bin\Debug\netcoreapp2.0\Map.runtimeconfig.dev.json
+D:\Projects\MapServer\Map\bin\Debug\netcoreapp2.0\Map.dll
+D:\Projects\MapServer\Map\bin\Debug\netcoreapp2.0\Map.pdb
+D:\Projects\MapServer\Map\obj\Debug\netcoreapp2.0\Map.csprojResolveAssemblyReference.cache
+D:\Projects\MapServer\Map\obj\Debug\netcoreapp2.0\Map.csproj.CoreCompileInputs.cache
+D:\Projects\MapServer\Map\obj\Debug\netcoreapp2.0\Map.AssemblyInfoInputs.cache
+D:\Projects\MapServer\Map\obj\Debug\netcoreapp2.0\Map.AssemblyInfo.cs
+D:\Projects\MapServer\Map\obj\Debug\netcoreapp2.0\Map.dll
+D:\Projects\MapServer\Map\obj\Debug\netcoreapp2.0\Map.pdb

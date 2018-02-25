@@ -12622,8 +12622,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anhvu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -12632,20 +12631,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\GitHub\\MapServer\\MapServer\\Map\\Map.csproj",
+      "projectUniqueName": "D:\\Projects\\MapServer\\Map\\Map.csproj",
       "projectName": "Map",
-      "projectPath": "E:\\GitHub\\MapServer\\MapServer\\Map\\Map.csproj",
-      "packagesPath": "C:\\Users\\anhvu\\.nuget\\packages\\",
-      "outputPath": "E:\\GitHub\\MapServer\\MapServer\\Map\\obj\\",
+      "projectPath": "D:\\Projects\\MapServer\\Map\\Map.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\MapServer\\Map\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\anhvu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -12668,18 +12665,18 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.All": {
+          "Microsoft.Owin.Cors": {
             "target": "Package",
-            "version": "[2.0.5, )"
+            "version": "4.0.0"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "[2.0.0, )",
+            "version": "2.0.0",
             "autoReferenced": true
           },
-          "Microsoft.Owin.Cors": {
+          "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "[4.0.0, )"
+            "version": "2.0.5"
           }
         },
         "imports": [
