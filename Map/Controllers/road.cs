@@ -11,15 +11,15 @@ namespace Map.Controllers
         public Coordinate[] paths { get; set; }
 
         public string color { get; set; }
-        public string description { get; set; }
+        public string metaData { get; set; }
         public double distance { get; set; }
-        public road(int id, Coordinate[] paths, double dist, string color, string des)
+        public road(int id, Coordinate[] paths, double dist, string color, string metaData)
         {
             this.id = id;
             this.paths = paths;
             this.distance = dist;
             this.color = color;
-            this.description = des;
+            this.metaData = metaData;
         }
     }
 
