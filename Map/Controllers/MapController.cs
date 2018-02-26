@@ -16,17 +16,58 @@ namespace Map.Controllers
         {
             var roads = new List<road>()
             {
-                new road(1, 21.017504, 105.781862, 21.015415, 105.778804, 0.5, "#f72727", "Busy"),
-                new road(2, 21.018379, 105.781427, 21.017646, 105.781923, 0.5, "#f7551b", "Crowded"),
-                new road(3, 21.017032, 105.779578, 21.018295, 105.779560, 0.5, "#41ff28", "Normal"),
-                new road(4, 21.016594, 105.783340, 21.018446, 105.783493, 0.5, "#3859ff", "Empty"),
-                new road(5, 21.019855, 105.780514, 21.017878, 105.782083, 0.5, "#3859ff", "Empty"),
-                new road(6, 21.018291, 105.782906, 21.020160, 105.785594, 0.5, "#41ff28", "Normal"),
-                new road(7, 21.017844, 105.782617, 21.019790, 105.785441, 0.5, "#41ff28", "Normal"),
-                new road(8, 21.018095, 105.785008, 21.016112, 105.785555, 0.5, "#3859ff", "Empty")
+                new road(1, new Coordinate[] {
+                    new Coordinate(21.01751,105.78186000000001),
+                    new Coordinate(21.01633,105.78019),
+                    new Coordinate(21.016240000000003,105.78006),
+                    new Coordinate(21.016280000000002,105.78002000000001),
+                    new Coordinate(21.015900000000002,105.77951),
+                    new Coordinate(21.015420000000002,105.7788)
+                }, 0.5, "#f72727", "Busy"),
+                new road(2, new Coordinate[] {
+                    new Coordinate(21.01836,105.7814),
+                    new Coordinate(21.017650000000003,105.78193)
+                }, 0.5, "#f7551b", "Crowded"),
+                new road(3, new Coordinate[] {
+                    new Coordinate(21.017030000000002,105.77958000000001),
+                    new Coordinate(21.01723,105.77972000000001),
+                    new Coordinate(21.01743,105.77980000000001),
+                    new Coordinate(21.01763,105.77983),
+                    new Coordinate(21.017850000000003,105.77983),
+                    new Coordinate(21.01809,105.77972000000001),
+                    new Coordinate(21.0183,105.77956)
+                }, 0.5, "#41ff28", "Normal"),
+                new road(4, new Coordinate[] {
+                    new Coordinate(21.01658,105.78331000000001),
+                    new Coordinate(21.01726,105.78275000000001),
+                    new Coordinate(21.018,105.78288),
+                    new Coordinate(21.01845,105.78349000000001)
+                }, 0.5, "#3859ff", "Empty"),
+                new road(5, new Coordinate[] {
+                    new Coordinate(21.01788,105.78209000000001),
+                    new Coordinate(21.01893,105.78127),
+                    new Coordinate(21.01977,105.78059),
+                    new Coordinate(21.01986,105.78052000000001),
+                }, 0.5, "#3859ff", "Empty"),
+                new road(6, new Coordinate[] {
+                    new Coordinate(21.02016,105.7856),
+                    new Coordinate(21.01827,105.78292)
+                }, 0.5, "#41ff28", "Normal"),
+                new road(7, new Coordinate[] {
+                    new Coordinate(21.01783,105.78263000000001),
+                    new Coordinate(21.019820000000003,105.78541000000001)
+                }, 0.5, "#41ff28", "Normal"),
+                new road(8, new Coordinate[] {
+                    new Coordinate(21.0181,105.78503),
+                    new Coordinate(21.017030000000002,105.78510000000001),
+                    new Coordinate(21.016800000000003,105.78515),
+                    new Coordinate(21.016550000000002,105.78527000000001),
+                    new Coordinate(21.01631,105.78542),
+                    new Coordinate(21.01612,105.78556)
+                }, 0.5, "#3859ff", "Empty")
             };
 
-            return Ok(new Map(1,mapType.Google, roads, true));
+            return Ok(new Map(1, mapType.Google, roads, true));
         }
     }
     public class MapType

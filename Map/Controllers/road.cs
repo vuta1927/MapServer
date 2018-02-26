@@ -8,24 +8,29 @@ namespace Map.Controllers
     public class road
     {
         public int id { get; set; }
-        public double slat { get; set; }
-        public double slng { get; set; }
-        public double elat { get; set; }
-        public double elng { get; set; }
+        public Coordinate[] paths { get; set; }
 
         public string color { get; set; }
         public string description { get; set; }
         public double distance { get; set; }
-        public road(int id, double slat, double slng, double elat, double elng, double dist, string color, string des)
+        public road(int id, Coordinate[] paths, double dist, string color, string des)
         {
             this.id = id;
-            this.slat = slat; 
-            this.slng = slng;
-            this.elng = elng;
-            this.elat = elat;
+            this.paths = paths;
             this.distance = dist;
             this.color = color;
             this.description = des;
+        }
+    }
+
+    public class Coordinate
+    {
+        public double lat { get; set; }
+        public double lng { get; set; }
+        public Coordinate(double lat, double lng)
+        {
+            this.lat = lat;
+            this.lng = lng;
         }
     }
 }
