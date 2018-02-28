@@ -23,11 +23,11 @@ namespace Map.Controllers
                     new Coordinate(21.016280000000002,105.78002000000001),
                     new Coordinate(21.015900000000002,105.77951),
                     new Coordinate(21.015420000000002,105.7788)
-                }, 0.5, "#f72727", new MetaData("Đoạn đường Mễ trì 1", "Dương Đình Nghệ --> Hệ thống đào tạo CNTT Quốc Tế karROX")),
+                }, 0.5, "#f72727", new MetaData("Đoạn đường Mễ trì 1", new Direction("Dương Đình Nghệ --> Hệ thống đào tạo CNTT Quốc Tế karROX","Duong Dinh Nghe --> He thong dao tao CNTT Quoc Te karROX"))),
                 new road(2, new Coordinate[] {
                     new Coordinate(21.01836,105.7814),
                     new Coordinate(21.017650000000003,105.78193)
-                }, 0.5, "#f7551b", new MetaData("Đoạn đường Phạm Hùng 1","MB ATM Phạm Hùng --> Ngã tư Mễ Trì")),
+                }, 0.5, "#f7551b", new MetaData("Đoạn đường Phạm Hùng 1", new Direction("MB ATM Phạm Hùng --> Ngã tư Mễ Trì","MB ATM Pham Hung"))),
                 new road(3, new Coordinate[] {
                     new Coordinate(21.017030000000002,105.77958000000001),
                     new Coordinate(21.01723,105.77972000000001),
@@ -36,27 +36,27 @@ namespace Map.Controllers
                     new Coordinate(21.017850000000003,105.77983),
                     new Coordinate(21.01809,105.77972000000001),
                     new Coordinate(21.0183,105.77956)
-                }, 0.5, "#41ff28", new MetaData("Đỗ Đình Thiện, Mỹ Đình 1", "Đỗ Đình Thiện")),
+                }, 0.5, "#41ff28", new MetaData("Đỗ Đình Thiện, Mỹ Đình 1", new Direction("Đỗ Đình Thiện","Do Dinh Thien"))),
                 new road(4, new Coordinate[] {
                     new Coordinate(21.01658,105.78331000000001),
                     new Coordinate(21.01726,105.78275000000001),
                     new Coordinate(21.018,105.78288),
                     new Coordinate(21.01845,105.78349000000001)
-                }, 0.5, "#3859ff", new MetaData("Dương Đình Nghệ - Phạm Hùng", "Dương Đình Nghệ --> Tòa nhà Keangnam, Phạm Hùng")),
+                }, 0.5, "#3859ff", new MetaData("Dương Đình Nghệ - Phạm Hùng", new Direction("Dương Đình Nghệ --> Tòa nhà Keangnam, Phạm Hùng","Duong Dinh Nghe --> Toa nha Keangnam, Pham Hung"))),
                 new road(5, new Coordinate[] {
                     new Coordinate(21.01788,105.78209000000001),
                     new Coordinate(21.01893,105.78127),
                     new Coordinate(21.01977,105.78059),
                     new Coordinate(21.01986,105.78052000000001),
-                }, 0.5, "#3859ff", new MetaData("Dương Đình Nghệ 1", "Ngã tư Dương Đình Nghệ")),
+                }, 0.5, "#3859ff", new MetaData("Dương Đình Nghệ 1", new Direction("Ngã tư Dương Đình Nghệ 1","Nga tu Duong Dinh Nghe 1"))),
                 new road(6, new Coordinate[] {
                     new Coordinate(21.02016,105.7856),
                     new Coordinate(21.01827,105.78292)
-                }, 0.5, "#41ff28", new MetaData()),
+                }, 0.5, "#41ff28", new MetaData("Dương Đình Nghệ 3", new Direction("Ngã tư Dương Đình Nghệ 3","Nga tu Duong Dinh Nghe 3"))),
                 new road(7, new Coordinate[] {
                     new Coordinate(21.01783,105.78263000000001),
                     new Coordinate(21.019820000000003,105.78541000000001)
-                }, 0.5, "#41ff28", new MetaData("Dương Đình Nghệ 2", "Ngã tư Dương Đình Nghệ")),
+                }, 0.5, "#41ff28", new MetaData("Dương Đình Nghệ 2", new Direction("Ngã tư Dương Đình Nghệ 2","Nga tu Duong Dinh Nghe 2"))),
                 new road(8, new Coordinate[] {
                     new Coordinate(21.0181,105.78503),
                     new Coordinate(21.017030000000002,105.78510000000001),
@@ -64,7 +64,7 @@ namespace Map.Controllers
                     new Coordinate(21.016550000000002,105.78527000000001),
                     new Coordinate(21.01631,105.78542),
                     new Coordinate(21.01612,105.78556)
-                }, 0.5, "#3859ff", new MetaData("Khu đô thị CD2 Mễ Trì","Khu đô thị CD2 Mễ Trì"))
+                }, 0.5, "#3859ff", new MetaData("Khu đô thị CD2 Mễ Trì",new Direction("Khu đô thị CD2 Mễ Trì","Khu do thi CD2 Me Tri")))
             };
 
             return Ok(new Map(1, mapType.Google, roads, true));

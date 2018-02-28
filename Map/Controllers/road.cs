@@ -37,12 +37,23 @@ namespace Map.Controllers
     public class MetaData
     {
         public string name { get; set; }
-        public string direction { get; set; }
+        public Direction direction { get; set; }
         public MetaData() { }
-        public MetaData(string pname, string pdirection)
+        public MetaData(string pname, Direction pdirection)
         {
             this.name = pname;
             this.direction = pdirection;
+        }
+    }
+
+    public class Direction
+    {
+        public string display { get; set; }
+        public string value { get; set; }
+        public Direction(string display, string value)
+        {
+            this.display = display;
+            this.value = value;
         }
     }
 }
